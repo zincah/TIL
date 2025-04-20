@@ -1,4 +1,4 @@
-package org.example.effective.singleton;
+package org.example.effective.item3_singleton;
 
 import lombok.extern.slf4j.Slf4j;
 

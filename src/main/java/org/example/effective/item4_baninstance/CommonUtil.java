@@ -1,4 +1,4 @@
-package org.example.effective.baninstance;
+package org.example.effective.item4_baninstance;
 
 public class CommonUtil {
 

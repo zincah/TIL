@@ -1,7 +1,7 @@
-package org.example.effective.singleton.run;
+package org.example.effective.item3_singleton.run;
 
 import lombok.extern.slf4j.Slf4j;
-import org.example.effective.singleton.EnumSingleton;
+import org.example.effective.item3_singleton.DCLSingleton;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -9,22 +9,18 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
 @Slf4j
-public class EnumSingletonTest {
-
+public class DCLSingletonTest {
     public static void main(String[] args) throws Exception{
-
-        EnumSingleton singleton1 = EnumSingleton.INSTANCE;
-        singleton1.printLogging();
+        DCLSingleton singleton1 = DCLSingleton.getInstance();
 
         // 직렬화
-        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("enum_singleton.ser"));
+        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("dcl_singleton.ser"));
         oos.writeObject(singleton1);
         oos.close();
 
         // 역직렬화
-        ObjectInputStream ois = new ObjectInputStream(new FileInputStream("enum_singleton.ser"));
-        EnumSingleton singleton2 = (EnumSingleton) ois.readObject();
-        singleton2.printLogging();
+        ObjectInputStream ois = new ObjectInputStream(new FileInputStream("dcl_singleton.ser"));
+        DCLSingleton singleton2 = (DCLSingleton) ois.readObject();
         ois.close();
 
         if(singleton1 == singleton2) {

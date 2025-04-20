@@ -1,8 +1,7 @@
-package org.example.effective.singleton.run;
+package org.example.effective.item3_singleton.run;
 
 import lombok.extern.slf4j.Slf4j;
-import org.example.effective.singleton.EnumSingleton;
-import org.example.effective.singleton.HolderSingleton;
+import org.example.effective.item3_singleton.EnumSingleton;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -10,19 +9,21 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
 @Slf4j
-public class HolderSingletonTest {
+public class EnumSingletonTest {
+
     public static void main(String[] args) throws Exception{
-        HolderSingleton singleton1 = HolderSingleton.getInstance();
+
+        EnumSingleton singleton1 = EnumSingleton.INSTANCE;
         singleton1.printLogging();
 
         // 직렬화
-        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("holder_singleton.ser"));
+        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("enum_singleton.ser"));
         oos.writeObject(singleton1);
         oos.close();
 
         // 역직렬화
-        ObjectInputStream ois = new ObjectInputStream(new FileInputStream("holder_singleton.ser"));
-        HolderSingleton singleton2 = (HolderSingleton) ois.readObject();
+        ObjectInputStream ois = new ObjectInputStream(new FileInputStream("enum_singleton.ser"));
+        EnumSingleton singleton2 = (EnumSingleton) ois.readObject();
         singleton2.printLogging();
         ois.close();
 
@@ -31,5 +32,6 @@ public class HolderSingletonTest {
         }else{
             log.info("동일한 싱글톤 객체x");
         }
+
     }
 }

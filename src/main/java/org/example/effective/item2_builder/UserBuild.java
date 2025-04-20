@@ -1,7 +1,7 @@
-package org.example.effective.builder;
+package org.example.effective.item2_builder;
 
 import lombok.extern.slf4j.Slf4j;
-import static org.example.effective.builder.User.Authority.*;
+import static org.example.effective.item2_builder.User.Authority.*;
 
 @Slf4j
 public class UserBuild {

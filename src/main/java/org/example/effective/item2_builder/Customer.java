@@ -1,4 +1,4 @@
-package org.example.effective.builder;
+package org.example.effective.item2_builder;
 
 import java.util.Objects;
 

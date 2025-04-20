@@ -1,4 +1,4 @@
-package org.example.effective.staticfactorymethod;
+package org.example.effective.item1_staticfactorymethod;
 
 import lombok.extern.slf4j.Slf4j;
 
