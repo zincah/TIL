@@ -1,7 +1,6 @@
-package org.example.effective.item7_eliminatereferences;
+package org.example.effective.chapter2.item7;
 
 import lombok.extern.slf4j.Slf4j;
-import org.example.effective.chapter2.item7.WeakCache;
 import org.junit.jupiter.api.Test;
 
 @Slf4j

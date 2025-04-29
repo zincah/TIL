@@ -1,10 +1,6 @@
-package org.example.effective.item5_dependency;
+package org.example.effective.chapter2.item5;
 
 import lombok.extern.slf4j.Slf4j;
-import org.example.effective.chapter2.item5.Dictionary;
-import org.example.effective.chapter2.item5.SpellCheckerV2;
-import org.example.effective.chapter2.item5.SpellCheckerV3;
-import org.example.effective.item5_dependencyinjection.*;
 import org.example.effective.chapter2.item5.dictionary.DefaultDictionary;
 import org.junit.jupiter.api.Test;
 
