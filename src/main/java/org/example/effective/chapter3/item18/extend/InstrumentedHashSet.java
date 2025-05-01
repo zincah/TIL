@@ -1,11 +1,13 @@
-package my.wonseok.chapter02.item18.composition;
+package org.example.effective.chapter3.item18.extend;
 
-import java.util.Set;
+import java.util.HashSet;
 
-public class InstrumentedSet<E> extends ForwardingSet<E> {
+public class InstrumentedHashSet<E> extends HashSet<E> {
     private int addCount = 0;
-    public InstrumentedSet(Set<E> s){
-        super(s);
+    public InstrumentedHashSet(){}
+
+    public InstrumentedHashSet(int initCap, float loadFactor){
+        super(initCap, loadFactor);
     }
 
     @Override

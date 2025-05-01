@@ -1,8 +1,8 @@
-package my.wonseok.chapter02.item11.test;
+package org.example.effective.chapter3.item11.test;
 
-import my.wonseok.chapter02.item11.hashcode.GoodCode;
-import my.wonseok.chapter02.item11.hashcode.NoCode;
-import my.wonseok.chapter02.item11.hashcode.WorstCode;
+import org.example.effective.chapter3.item11.hashcode.GoodCode;
+import org.example.effective.chapter3.item11.hashcode.NoCode;
+import org.example.effective.chapter3.item11.hashcode.WorstCode;
 
 import java.util.HashMap;
 import java.util.Map;

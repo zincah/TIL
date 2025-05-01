@@ -1,4 +1,4 @@
-package my.wonseok.chapter02.item11.hashcode;
+package org.example.effective.chapter3.item11.hashcode;
 
 
 import com.google.common.base.Objects;

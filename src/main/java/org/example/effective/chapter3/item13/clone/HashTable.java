@@ -1,4 +1,4 @@
-package my.wonseok.chapter02.item13.clone;
+package org.example.effective.chapter3.item13.clone;
 
 public class HashTable implements Cloneable {
 

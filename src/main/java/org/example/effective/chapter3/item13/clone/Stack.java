@@ -1,5 +1,5 @@
-package my.wonseok.chapter02.item13.clone;
-import my.wonseok.chapter02.item13.PhoneNumber;
+package org.example.effective.chapter3.item13.clone;
+import org.example.effective.chapter3.item13.PhoneNumber;
 
 import java.util.Arrays;
 import java.util.EmptyStackException;

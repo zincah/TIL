@@ -1,8 +1,7 @@
-package my.wonseok.chapter02.item12;
+package org.example.effective.chapter3.item12;
 
 
 import com.google.common.base.MoreObjects;
-import com.google.common.base.Objects;
 import lombok.ToString;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;

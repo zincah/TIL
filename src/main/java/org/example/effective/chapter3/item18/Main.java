@@ -1,14 +1,11 @@
-package my.wonseok.chapter02.item18;
+package org.example.effective.chapter3.item18;
 
-import my.wonseok.chapter02.item18.composition.Dog;
-import my.wonseok.chapter02.item18.composition.InstrumentedSet;
-import my.wonseok.chapter02.item18.extend.InstrumentedHashSet;
+import org.example.effective.chapter3.item18.composition.Dog;
+import org.example.effective.chapter3.item18.composition.InstrumentedSet;
+import org.example.effective.chapter3.item18.extend.InstrumentedHashSet;
 
-import java.time.Instant;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import java.util.TreeSet;
 
 /**
  * 상속보다는 컴포지션을 사용하라

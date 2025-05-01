@@ -1,4 +1,4 @@
-package my.wonseok.chapter02.item13;
+package org.example.effective.chapter3.item13;
 
 // PhoneNumber에 toString 메서드 추가 (75쪽)
 public final class RestrictCloneTest {

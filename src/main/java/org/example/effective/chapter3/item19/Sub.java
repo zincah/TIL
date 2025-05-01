@@ -1,4 +1,4 @@
-package my.wonseok.chapter02.item19;
+package org.example.effective.chapter3.item19;
 
 import java.time.Instant;
 
