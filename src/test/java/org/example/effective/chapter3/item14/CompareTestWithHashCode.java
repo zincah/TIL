@@ -15,7 +15,7 @@ public class CompareTestWithHashCode {
 
     /**
      * 해시코드는 정렬 기준으로 삼기에 부적절하며, 꼭 써야한다면
-     * 아래의 goodComparator를 사용해야함
+     * 아래의 goodComparator 예시 처럼 사용해야함
      *
      * 추이성이란?
      * 만약 a > b이고 b > c이면, 반드시 a > c여야 한다.
