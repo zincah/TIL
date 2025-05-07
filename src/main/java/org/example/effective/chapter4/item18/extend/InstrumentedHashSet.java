@@ -1,4 +1,4 @@
-package org.example.effective.chapter3.item18.extend;
+package org.example.effective.chapter4.item18.extend;
 
 import java.util.HashSet;
 

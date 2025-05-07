@@ -1,4 +1,4 @@
-package org.example.effective.chapter3.item15.nested;
+package org.example.effective.chapter4.item15.nested;
 
 import lombok.extern.slf4j.Slf4j;
 

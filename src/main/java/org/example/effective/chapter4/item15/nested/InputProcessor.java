@@ -1,4 +1,4 @@
-package org.example.effective.chapter3.item15.nested;
+package org.example.effective.chapter4.item15.nested;
 
 /**
  * 중첩 인터페이스 + 중첩 구현 클래스

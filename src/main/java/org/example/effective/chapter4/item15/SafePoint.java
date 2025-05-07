@@ -1,4 +1,4 @@
-package org.example.effective.chapter3.item15;
+package org.example.effective.chapter4.item15;
 
 /**
  * 캡슐화 + 메서드 제어

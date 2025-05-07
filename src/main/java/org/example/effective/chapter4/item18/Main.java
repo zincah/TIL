@@ -1,8 +1,8 @@
-package org.example.effective.chapter3.item18;
+package org.example.effective.chapter4.item18;
 
-import org.example.effective.chapter3.item18.composition.Dog;
-import org.example.effective.chapter3.item18.composition.InstrumentedSet;
-import org.example.effective.chapter3.item18.extend.InstrumentedHashSet;
+import org.example.effective.chapter4.item18.composition.Dog;
+import org.example.effective.chapter4.item18.composition.InstrumentedSet;
+import org.example.effective.chapter4.item18.extend.InstrumentedHashSet;
 
 import java.util.List;
 import java.util.Set;

@@ -1,4 +1,4 @@
-package org.example.effective.chapter3.item15.serializable;
+package org.example.effective.chapter4.item15.serializable;
 
 import java.io.Serializable;
 

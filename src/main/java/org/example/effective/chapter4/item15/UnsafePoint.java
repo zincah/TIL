@@ -1,4 +1,4 @@
-package org.example.effective.chapter3.item15;
+package org.example.effective.chapter4.item15;
 
 /**
  * public 가변 필드를 갖는 클래스는 일반적으로 스레드 안전하지 않다.

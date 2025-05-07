@@ -8,12 +8,12 @@ final class TimePeriod {
 
     public TimePeriod(Date start, Date end) {
         // 방어적 복사
-        this.start = new Date(start.getTime());
+        this.start = start;
         this.end = new Date(end.getTime());
     }
 
     public Date getStart() {
-        return new Date(start.getTime()); // 방어적 복사
+        return start; // 방어적 복사
     }
 
     public Date getEnd() {
