@@ -1,4 +1,4 @@
-package org.example.effective.chapter3.item15;
+package org.example.effective.chapter4.item15;
 
 import lombok.extern.slf4j.Slf4j;
 import org.example.effective.chapter4.item15.nested.InputProcessor;
