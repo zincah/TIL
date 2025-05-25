@@ -19,6 +19,8 @@ import java.util.Iterator;
  * - AbstractCollection을 상속한 건 private 내부 클래스.
  * - 내부 클래스는 공통 기능을 대신 구현하고, MyQueue는 그 기능을 위임받아 사용.
  * - 외부에서는 AbstractCollection이 사용된 줄도 모름 (캡슐화)
+ *
+ * 결론 : 이렇게 인터페이스 기반 설계를 하되, 필요한 기능은 내부적으로 골격 구현 클래스로 재사용할 수도 있음
  */
 public class MyQueue<E> implements Collection<E> {
 
