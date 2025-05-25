@@ -12,6 +12,8 @@ package org.example.effective.chapter4.item23.hierarchy.record;
  * - equals(), hashCode(), toString() 제공
  */
 public record Circle(double radius) implements Figure{
+
+    // 추상메서드를 다형성으로 재정의
     @Override
     public double area() {
         return Math.PI * radius * radius;

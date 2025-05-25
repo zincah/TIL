@@ -18,16 +18,24 @@ public class Figure {
 
     final Shape shape;
 
-    public Figure(Shape shape){
-        this.shape = shape;
-    }
-
     // for rectangle
     double length;
     double width;
 
     // for circle
     double radius;
+
+
+    Figure(double length, double width){
+        this.shape = Shape.RECTANGLE;
+        this.length = length;
+        this.width = width;
+    }
+
+    Figure(double radius){
+        this.shape = Shape.CIRCLE;
+        this.radius = radius;
+    }
 
     double area() {
         switch (shape) {
