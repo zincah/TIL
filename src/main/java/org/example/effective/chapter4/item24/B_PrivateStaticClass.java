@@ -21,6 +21,6 @@ public class B_PrivateStaticClass {
 class B_Test {
     public static void main(String[] args) {
         //외부에서 접근 불가
-        B_PrivateStaticClass.PrivateStaticHelper.help();
+        //B_PrivateStaticClass.PrivateStaticHelper.help();
     }
 }
