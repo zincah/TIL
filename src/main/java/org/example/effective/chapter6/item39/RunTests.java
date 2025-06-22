@@ -5,6 +5,15 @@ import lombok.extern.slf4j.Slf4j;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
+/**
+ * 아이템 39: 명명 패턴보다 애너테이션을 사용하라
+ * - 테스트 메서드처럼 특정 목적을 갖는 코드를 구분할 때, 특정 메소드를 만들어서(testSomething...) 명명 패턴에 의존하지 말고 애너테이션을 사용하는 것을 권유
+ *
+ * 애너테이션 사용 강점
+ * 1. 명확성
+ * 2. 리플렉션으로 탐지 쉬움 (method.isAnnotationPresent(..class))
+ * 3. 유연한 확장 가능
+ */
 @Slf4j
 public class RunTests {
     public static void main(String[] args) throws Exception{
@@ -12,7 +21,7 @@ public class RunTests {
         int passed = 0;
         Class<?> testClass = Class.forName(args[0]);
         for(Method m : testClass.getDeclaredMethods()){
-            if(m.isAnnotationPresent(Test.class)){
+            if(m.isAnnotationPresent(Test.class)){ // 리플렉션으로 탐지 쉬움
                 tests++;
                 try{
 //                    Sample s = new Sample();

@@ -40,7 +40,7 @@ public class PlantTest {
             log.debug("{} : {}", Plant.LifeCycle.values()[i], plantsByLifeCycle[i]);
         }
 
-        // 이렇게 코드가 ordinal 에 완전희 의존하고 있는 것이 좋지 않음
+        // 이렇게 코드가 ordinal 에 완전히 의존하고 있는 것이 좋지 않음
         // 아래처럼 상수에 기존에 알고있었던 인덱스를 사용하다가 enum 상수가 추가되거나 삭제되면 문제
         // 배열의 크기를 정적 구조 (= new Set[4]) 이렇게 사용해도 문제
         // 데이터 직렬화 또는 저장시에 ordinal 값으로 저장하면 값의 의미가 완전히 달라질 수 있기에 문제
