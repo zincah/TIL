@@ -1,0 +1,20 @@
+
+1. java 컴파일 및 jni 헤더 생성 (java 파일 경로로 이동)
+javac -h . RandomNumberGenerator.java
+
+2. c 파일의 이름은 보통 java 클래스랑 맞춰서 RandomNumberGenerator.c
+
+3. 상단에 .h 파일을 include 해줌
+#include "org_example_effective_chapter9_item66_RandomNumberGenerator.h"
+
+4. c 파일의 jni 시그니처는 패키지를 포함해야함 (아래와 같이 작성)
+Java_org_example_effective_chapter9_item66_RandomNumberGenerator_nativeNextInt
+
+5. 네이티브 라이브러리 생성 (.dylib)
+jni.h, jni_md.h 가 있는 파일 경로를 잡아줘야함 ($JAVA_HOME/include/jni.h, $JAVA_HOME/include/darwin/jni_md.h)
+
+gcc -I /opt/homebrew/Cellar/openjdk@17/17.0.13/include \
+     -dynamiclib -o libfastnative.dylib RandomNumberGenerator.c
+
+6. vm 옵션 넣어주던지 java 실행시 아래와 같이 실행
+-Djava.library.path=./src/main/java/org/example/effective/chapter9/item66
