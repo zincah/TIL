@@ -1,0 +1,31 @@
+예외의 종류 두가지는 예외를 왜 던지느냐에 따라 구분된다
+1. 검사예외(Checked Exception)
+ - 호출자 (클라이언트)가 예외 상황에서 복구작업을 수행 할 수 있을 때 사용
+ - 호출자가 예외에 대한 다른 행동(복구)를 취할 수 있음
+ - 강제성이 있기 때문에 호출자는 반드시 try-catch로 잡거나 throws로 전파해야 컴파일 됨
+
+2. 런타임 예외(Runtime Exception)
+ - 개발자가 코드를 잘못 짰다는 신호. 호출자는 이 예외를 받알을 때 복구 방법이 없음
+ - 예) null 이 넘어오면 안되는데 넘어옴(NullPointerException), 메서드 인자가 부적절함(IllegalArgumentException)
+ - 강제성이 없기때문에 명시적으로 처리하지 않아도 됨 (catch로 잡아서 다른 행동을 취할수도 있음)
+
+요약:  복구할 기회가 있다면 검사 예외, 복구할 방법이 없는 개발자의 실수라면 런타임 예외
+
+
+
+대표 검사 예외 종류
+ - IOException
+ - FileNotFoundException
+ - SQLException
+ - ClassNotFoundException
+
+대표 런타임 예외 종류
+ - NullPointerException
+ - IllegalArgumentException
+ - ClassCastException
+ - IndexOutOfBoundsException
+
+ 에러 종류 (프로세스 강제 종료)
+ - OutOfMemoryError
+ - StackOverflowError
+ - VirtualMachineError
